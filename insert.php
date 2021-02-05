@@ -11,7 +11,7 @@ $query = "INSERT INTO student (firstName, lastName, email) VALUES ('$_POST[first
 // Insert information into database
 if (!mysqli_query($db, $query)) {
         // Display error if present
-        die('An error occurred when submitting your review.');
+        die('An error occurred when submitting your student.');
     } else {
       // Redirect upon completion
       header("Location: index.php");
